@@ -1,0 +1,11 @@
+[Unit]
+Description=discord-bot-base-python
+After=network.target
+[Service]
+Type=simple
+RemainAfterExit=yes
+User=bot
+WorkingDirectory=/home/bot/discord-bot-base-python
+ExecStart=/home/bot/discord-bot-base-python/service/execute.sh
+[Install]
+WantedBy=multi-user.target
